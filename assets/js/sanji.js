@@ -46,20 +46,4 @@ window.onload = () => {
   handlePositionToken();
 
   window.addEventListener('resize', handlePositionToken);
-
-  const splide = new Splide('.splide', {
-    type: 'loop',
-    drag: 'free',
-    focus: 'center',
-    perPage: 3,
-    resolve: {
-      left: true,
-    },
-    autoScroll: {
-      speed: 2,
-      rewind: true,
-    },
-  });
-
-  splide.mount(window.splide.Extensions);
 };
