@@ -81,6 +81,7 @@
             },
             backgroundImage: {
               'footer-banner': "url('/assets/images/footer-banner.jpg')",
+              'hero-banner': "url('/assets/images/ochopper/chopper_7.png')",
             },
             fontFamily: {
               gothamBlack: ['GothamBlack', 'sans-serif'],
@@ -106,89 +107,101 @@
       </div>
     </div>
     <div class="layout-wrapper hidden">
-      <header id="header" class="header-area z-10">
-        <div class="navbar-area">
-          <div class="container max-w-screen-xl relative mx-auto px-4 py-2">
-            <div class="w-full">
-              <nav
-                class="flex items-center navbar navbar-expand-lg justify-between"
-              >
-                <a class="mr-4" href="index.html">
-                  <img
-                    class="w-36 h-auto"
-                    src="assets/images/ochopper/Logo 3.png"
-                    alt="Logo"
-                  />
-                </a>
-                <button
-                  class="block navbar-toggler focus:outline-none lg:hidden"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarOne"
-                  aria-controls="navbarOne"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                  onclick="toggleMenu()"
+      <div
+        class="h-screen bg-gradient-to-r from-purple-500 to-pink-500 bg-no-repeat bg-center bg-contain"
+        style="
+          background-image: linear-gradient(
+              to right,
+              rgba(243, 79, 215, 0.5),
+              rgba(4, 23, 110, 0.5),
+              rgba(299, 100, 221, 0.5)
+            ),
+            url(/assets/images/ochopper/chopper_7.png);
+        "
+      >
+        <header id="header" class="header-area z-10">
+          <div class="navbar-area">
+            <div class="container max-w-screen-xl relative mx-auto px-4 py-2">
+              <div class="w-full">
+                <nav
+                  class="flex items-center navbar navbar-expand-lg justify-between"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-10 w-10 text-secondDark"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                      clip-rule="evenodd"
+                  <a class="mr-4" href="index.html">
+                    <img
+                      class="w-36 h-auto"
+                      src="assets/images/ochopper/Logo 3.png"
+                      alt="Logo"
                     />
-                  </svg>
-                </button>
-
-                <div
-                  class="absolute hidden top-[112px] -right-[100vw] z-20 w-full px-5 py-3 duration-300 bg-white shadow lg:w-auto collapse navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none"
-                  id="navbarOne"
-                >
-                  <ul
-                    id="nav"
-                    class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex space-x-0 ld:space-x-8"
+                  </a>
+                  <button
+                    class="block navbar-toggler focus:outline-none lg:hidden"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarOne"
+                    aria-controls="navbarOne"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    onclick="toggleMenu()"
                   >
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#tokenomics">Tokenomics</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#roadmap">Roadmap</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <!-- <li class="nav-item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-10 w-10 text-secondDark"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+
+                  <div
+                    class="absolute hidden top-[112px] -right-[100vw] z-20 w-full px-5 py-3 duration-300 bg-white shadow lg:w-auto collapse navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none"
+                    id="navbarOne"
+                  >
+                    <ul
+                      id="nav"
+                      class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex space-x-0 ld:space-x-8"
+                    >
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#tokenomics">Tokenomics</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#roadmap">Roadmap</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#team">Team</a>
+                      </li>
+                      <!-- <li class="nav-item">
                     <a class="page-scroll" href="#partner">Partner</a>
                   </li> -->
-                    <li class="nav-item">
-                      <a
-                        class="page-scroll"
-                        target="_blank"
-                        href="/assets/BabySanji-wpp.pdf"
-                        >Whitepaper</a
-                      >
-                    </li>
-                    <!-- <li class="nav-item">
+                      <li class="nav-item">
+                        <a
+                          class="page-scroll"
+                          target="_blank"
+                          href="/assets/BabySanji-wpp.pdf"
+                          >Whitepaper</a
+                        >
+                      </li>
+                      <!-- <li class="nav-item">
                       <button
                         class="border rounded-2xl px-4 py-2 bg-gradient-to-b from-primary to-primaryDark hover:drop-shadow-2xl flex items-center gap-2 font-bold"
                       >
                         Launch Dex
                       </button>
                     </li> -->
-                  </ul>
-                </div>
+                    </ul>
+                  </div>
 
-                <!-- <div
+                  <!-- <div
                 class="absolute right-0 hidden mt-2 mr-24 navbar-btn sm:inline-block lg:mt-0 lg:static lg:mr-0"
               >
                 <button
@@ -197,15 +210,14 @@
                   Join Telegram
                 </button>
               </div> -->
-              </nav>
+                </nav>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
-
-      <div>
+        </header>
+        <!-- Content banner -->
         <section
-          class="container mx-auto px-4 max-w-screen-xl flex flex-col md:flex-row pt-4 md:pt-8"
+          class="container mx-auto px-4 max-w-screen-xl flex flex-col md:flex-row pt-4 md:pt-8 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           id="home"
         >
           <div
@@ -231,23 +243,6 @@
               >
                 JOIN THE COMMUNITY
               </a>
-
-              <!-- <div class="flex gap-2 items-center">
-                <div
-                  class="rounded-full border w-8 h-8 flex items-center justify-center cursor-pointer"
-                >
-                  <svg
-                    class="w-3 fill-primaryDark"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M2 24v-24l20 12-20 12z" />
-                  </svg>
-                </div>
-                <span>Watch Baby Sanji</span>
-              </div> -->
             </div>
             <div class="flex gap-4 pl-4 border-l-2 border-primaryDark">
               <a href="">
@@ -332,18 +327,10 @@
               </a>
             </div>
           </div>
-          <div class="flex flex-1 relative mt-4 md:mt-0 justify-center">
-            <div
-              class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-0 w-[300px] h-[300px] md:w-[500px] md:h-[520px] bg-gradient-to-b from-primary to-primaryDark border-card-custom"
-            ></div>
-            <img
-              class="w-2/3 object-contain animate__animated animate__fadeInRight not-effect"
-              src="/assets/images/ochopper/chopper_5.png"
-              alt="sanji inu"
-            />
-          </div>
         </section>
+      </div>
 
+      <div>
         <section
           id="testimoni"
           class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32"
@@ -394,7 +381,7 @@
                 >
                   <img
                     class="flex-1 w-28 md:w-24 h-auto"
-                    src="/assets/images/(5).png"
+                    src="/assets/images/ochopper/chopper_5.png"
                     alt=""
                   />
                   <div>
