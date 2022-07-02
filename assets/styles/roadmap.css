@@ -24,7 +24,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #000;
+  color: #fff;
 }
 .ova-road-map-advanced
   .road-map-advanced
@@ -44,7 +44,7 @@
   display: flex;
   margin: 0 auto;
   background-color: #fff;
-  border: 2.5px solid #ffe400;
+  border: 2.5px solid #f5ccd3;
   box-sizing: border-box;
   width: 24px;
   height: 24px;
@@ -63,7 +63,7 @@
   content: '';
   width: 12px;
   height: 12px;
-  background-color: #ffe400;
+  background-color: #f5ccd3;
   border-radius: 50%;
 }
 .ova-road-map-advanced
@@ -99,7 +99,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #ffc212;
+  color: #ffafbd;
   opacity: 0.9;
   transition: all 0.3s ease;
 }
@@ -131,7 +131,7 @@
   .timeline-row
   .timeline-item
   .timeline-content:hover {
-  background-color: #ffc212;
+  background-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced
@@ -174,8 +174,8 @@
   .timeline-item.timeline_done_next_desktop
   .timeline-icon
   .icon {
-  border-color: #ffc212;
-  background-color: #ffc212;
+  border-color: #ffafbd;
+  background-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced
@@ -245,7 +245,7 @@
   content: '';
   width: 100%;
   height: 3px;
-  background-color: #ffe400;
+  background-color: #f5ccd3;
   left: 50%;
   top: 52px;
 }
@@ -257,7 +257,7 @@
   content: '';
   width: 50%;
   height: 3px;
-  background-color: #ffe400;
+  background-color: #f5ccd3;
   left: 0;
   top: 52px;
 }
@@ -265,7 +265,7 @@
   .road-map-advanced
   .timeline-row:nth-of-type(odd)
   .timeline-item:first-child.timeline-done-odd:after {
-  background-color: #ffc212;
+  background-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced
@@ -283,7 +283,7 @@
   top: 52px;
   right: -15px;
   height: calc(100% + 103px);
-  border: 3px solid #ffe400;
+  border: 3px solid #f5ccd3;
   border-radius: 0 20px 20px 0;
   border-left: 0;
 }
@@ -292,13 +292,13 @@
   .timeline-row:nth-of-type(odd)
   .timeline-item.timeline-done:before {
   height: 3px;
-  background-color: #ffc212;
+  background-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced
   .timeline-row:nth-of-type(odd)
   .timeline-item.timeline-done:after {
-  border-color: #ffc212;
+  border-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced
@@ -325,7 +325,7 @@
   content: '';
   width: 100%;
   height: 3px;
-  background-color: #ffe400;
+  background-color: #f5ccd3;
   right: 50%;
   top: 52px;
 }
@@ -345,7 +345,7 @@
   top: 52px;
   left: -15px;
   height: calc(100% + 103px);
-  border: 3px solid #ffe400;
+  border: 3px solid #f5ccd3;
   border-radius: 20px 0 0 20px;
   border-right: 0;
 }
@@ -357,7 +357,7 @@
   content: '';
   width: 50%;
   height: 3px;
-  background-color: #ffe400;
+  background-color: #f5ccd3;
   right: 0;
   top: 52px;
 }
@@ -365,20 +365,20 @@
   .road-map-advanced
   .timeline-row:nth-of-type(even)
   .timeline-item:last-child.timeline-done-even:before {
-  background-color: #ffc212;
+  background-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced
   .timeline-row:nth-of-type(even)
   .timeline-item.timeline-done:first-child:before {
-  border-color: #ffc212;
+  border-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced
   .timeline-row:nth-of-type(even)
   .timeline-item.timeline-done:after {
   height: 3px;
-  background-color: #ffc212;
+  background-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced
@@ -422,7 +422,7 @@
   left: 0;
   top: 40%;
   margin-left: 10.5px;
-  background-color: #ffe400;
+  background-color: #f5ccd3;
 }
 .ova-road-map-advanced
   .road-map-advanced-mobile
@@ -452,7 +452,7 @@
   display: flex;
   margin: 0 auto;
   background-color: #fff;
-  border: 2.5px solid #ffe400;
+  border: 2.5px solid #f5ccd3;
   box-sizing: border-box;
   width: 24px;
   height: 24px;
@@ -470,7 +470,7 @@
   content: '';
   width: 12px;
   height: 12px;
-  background-color: #ffe400;
+  background-color: #f5ccd3;
   border-radius: 50%;
 }
 .ova-road-map-advanced
@@ -484,7 +484,7 @@
   height: 1px;
   left: 0;
   top: 50%;
-  background-color: #ffe400;
+  background-color: #f5ccd3;
   z-index: -1;
 }
 .ova-road-map-advanced
@@ -533,7 +533,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #ffc212;
+  color: #ffafbd;
   transition: all 0.3s ease;
 }
 .ova-road-map-advanced
@@ -566,15 +566,15 @@
   .timeline-content
   .content
   .text:not(:last-child) {
-  border-bottom: 1px solid #ffe400;
+  border-bottom: 1px solid #f5ccd3;
 }
 .ova-road-map-advanced
   .road-map-advanced-mobile
   .timeline-items.timeline-done-mb
   .timeline-icon
   .icon {
-  background-color: #ffc212;
-  border-color: #ffc212;
+  background-color: #ffafbd;
+  border-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced-mobile
@@ -598,15 +598,15 @@
 .ova-road-map-advanced
   .road-map-advanced-mobile
   .timeline-items.timeline-done-mb:before {
-  background-color: #ffc212;
+  background-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced-mobile
   .timeline-items.timeline_done_next_mobile
   .timeline-icon
   .icon {
-  background-color: #ffc212;
-  border-color: #ffc212;
+  background-color: #ffafbd;
+  border-color: #ffafbd;
 }
 .ova-road-map-advanced
   .road-map-advanced-mobile
