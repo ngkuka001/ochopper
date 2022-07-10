@@ -70,6 +70,11 @@
         section {
           @apply mb-32;
         }
+
+        .btn-primary {
+          @apply text-white bg-gradient-to-br from-primary to-second hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
+        }
+
         @media screen and (max-width: 768px) {
           .our-team-card {
             width: calc(20% - 10px);
@@ -83,11 +88,11 @@
           extend: {
             colors: {
               primaryColor: '#8384DF',
-              main: '#272D2D',
-              primary: '#ffc3a0',
-              primaryDark: '#ffafbd',
-              second: '#55a0d0',
-              secondDark: '#4159a8',
+              main: '#3B444B',
+              primary: '#f68887',
+              primaryDark: '#f68887',
+              second: '#54a0cf',
+              secondDark: '#54a0cf',
             },
             backgroundImage: {
               'footer-banner': "url('/assets/images/footer-banner.jpg')",
@@ -188,25 +193,8 @@
                         >Whitepaper</a
                       >
                     </li>
-                    <!-- <li class="nav-item">
-                      <button
-                        class="border rounded-2xl px-4 py-2 bg-gradient-to-b from-primary to-primaryDark hover:drop-shadow-2xl flex items-center gap-2 font-bold"
-                      >
-                        Launch Dex
-                      </button>
-                    </li> -->
                   </ul>
                 </div>
-
-                <!-- <div
-                class="absolute right-0 hidden mt-2 mr-24 navbar-btn sm:inline-block lg:mt-0 lg:static lg:mr-0"
-              >
-                <button
-                  class="border border-primaryDark rounded-lg px-4 py-2 flex items-center gap-2 w-full justify-center"
-                >
-                  Join Telegram
-                </button>
-              </div> -->
               </nav>
             </div>
           </div>
@@ -222,42 +210,27 @@
             class="flex flex-1 flex-col pt-40 animate__animated animate__fadeInUp"
           >
             <div class="font-bold text-5xl mb-8">
-              <span>O</span><span class="text-primaryDark">CHOPPER</span>
+              <span class="text-second">CHOPPER</span
+              ><span class="text-primary">X1000</span>
             </div>
             <div class="flex items-center gap-4 mb-4 md:mb-16">
               <!-- <img class="w-28 md:w-24" src="/assets/images/Logo3.png" alt="" /> -->
               <div>
-                OChopper-inu is a community meme token. OChopper-inu was created
-                with the aim of creating a new opportunity for those who missed
-                them before to build a strong philanthropic community in
-                Southeast Asia and follow in the footsteps of father Sanji-inu.
+                ChopperX1000-inu is a community meme token. ChopperX1000-inu was
+                created with the aim of creating a new opportunity for those who
+                missed them before to build a strong philanthropic community in
+                Southeast Asia and follow in the footsteps of father
+                ChopperX1000.
               </div>
             </div>
             <div class="flex items-center gap-8 mb-4">
               <a
                 target="_blank"
                 href="https://t.me/babysanjiinucm"
-                class="rounded-lg px-2 py-1 bg-gradient-to-l from-primary to-primaryDark hover:drop-shadow-lg cursor-pointer flex items-center gap-2"
+                class="btn-primary"
               >
                 JOIN THE COMMUNITY
               </a>
-
-              <!-- <div class="flex gap-2 items-center">
-                <div
-                  class="rounded-full border w-8 h-8 flex items-center justify-center cursor-pointer"
-                >
-                  <svg
-                    class="w-3 fill-primaryDark"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M2 24v-24l20 12-20 12z" />
-                  </svg>
-                </div>
-                <span>Watch OChopper</span>
-              </div> -->
             </div>
             <div class="flex gap-4 pl-4 border-l-2 border-primaryDark">
               <a href="">
@@ -343,12 +316,12 @@
             </div>
           </div>
           <div class="flex flex-1 relative mt-4 md:mt-0 justify-center">
-            <div
+            <!-- <div
               class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-0 w-[300px] h-[300px] md:w-[500px] md:h-[520px] bg-gradient-to-b from-primary to-primaryDark border-card-custom"
-            ></div>
+            ></div> -->
             <img
-              class="w-2/3 object-contain animate__animated animate__fadeInRight not-effect"
-              src="/assets/images/ochopper/chopper_5.png"
+              class="w-full object-contain animate__animated animate__fadeInRight not-effect"
+              src="/assets/images/ochopper/chopper_7.png"
               alt="sanji inu"
             />
           </div>
@@ -359,7 +332,7 @@
           class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32"
         >
           <div
-            class="bg-gradient-to-b from-primary to-primaryDark p-4 py-8 rounded-2xl"
+            class="bg-gradient-to-b from-[#343b41] to-[#343b41] p-4 py-8 rounded-2xl"
           >
             <div class="flex items-center flex-col md:flex-row">
               <div class="flex-1 flex flex-col md:flex-row">
@@ -367,35 +340,45 @@
                   class="flex-1 flex flex-col items-center justify-between text-center mb-4 md:mb-0"
                 >
                   <div>Audited by Coinscope</div>
-                  <a
-                    target="_blank"
-                    href="https://github.com/coinscope-co/audits/blob/main/babysanji/audit.pdf"
-                    class="rounded-2xl px-4 py-2 bg-gradient-to-r from-second to-secondDark hover:drop-shadow-lg cursor-pointer flex items-center gap-2 w-max"
-                  >
-                    View Audit
-                  </a>
-                </div>
-                <div
-                  class="flex-1 flex flex-col items-center justify-between text-center mb-4 md:mb-0"
-                >
-                  <div>Team is KYC verified by Coinscope</div>
                   <button
-                    class="rounded-2xl px-4 py-2 bg-gradient-to-r from-second to-secondDark hover:drop-shadow-2xl flex items-center gap-2 w-max"
+                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-primary to-second group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
                   >
-                    View KYC
+                    <span
+                      class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#343b41] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                    >
+                      View Audit
+                    </span>
                   </button>
                 </div>
                 <div
                   class="flex-1 flex flex-col items-center justify-between text-center mb-4 md:mb-0"
                 >
-                  <div>Contract created by the OChopper</div>
-                  <a
-                    target="_blank"
-                    href="https://bscscan.com/address/0x77381fcdc54e63848980b9810af5ad451d3b25fd#code"
-                    class="rounded-2xl px-4 py-2 bg-gradient-to-r from-second to-secondDark hover:drop-shadow-lg cursor-pointer flex items-center gap-2 w-max"
+                  <div>Team is KYC verified by Coinscope</div>
+
+                  <button
+                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-primary to-second group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
                   >
-                    View Contract
-                  </a>
+                    <span
+                      class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#343b41] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                    >
+                      View KYC
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="flex-1 flex flex-col items-center justify-between text-center mb-4 md:mb-0"
+                >
+                  <div>Contract created by the ChopperX1000</div>
+
+                  <button
+                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-primary to-second group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
+                  >
+                    <span
+                      class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#343b41] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                    >
+                      View Contract
+                    </span>
+                  </button>
                 </div>
               </div>
               <div class="flex-1 -order-1 md:order-none">
@@ -408,7 +391,7 @@
                     alt=""
                   />
                   <div>
-                    <div class="font-bold">OChopper</div>
+                    <div class="font-bold">ChopperX1000</div>
                     <div>
                       I will surpass my father and reach my new goal 1000x.
                       Follow me and together we will achieve it.
@@ -426,7 +409,7 @@
         >
           <div class="flex gap-10 mb-40 item flex-col md:flex-row">
             <div class="flex-1 flex flex-col gap-4">
-              <div class="font-bold text-4xl">Featured Cute OChopper</div>
+              <div class="font-bold text-4xl">Featured Cute ChopperX1000</div>
               <div>
                 As a boy born with a gift for cooking, he inherited all of his
                 father's talents. He has a crazy passion for cooking, his
@@ -435,73 +418,9 @@
               </div>
             </div>
             <div>
-              <button
-                class="border rounded-2xl px-4 py-2 bg-gradient-to-b from-second to-secondDark hover:drop-shadow-2xl flex items-center gap-2"
-              >
-                View all Baby
-
-                <svg
-                  class="w-3 h-auto"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  width="256"
-                  height="256"
-                  viewBox="0 0 256 256"
-                  xml:space="preserve"
-                >
-                  <defs></defs>
-                  <g transform="translate(128 128) scale(0.72 0.72)">
-                    <g
-                      style="
-                        stroke: none;
-                        stroke-width: 0;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: none;
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)"
-                    >
-                      <path
-                        d="M 86 49 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 49 86 49 z"
-                        style="
-                          stroke: none;
-                          stroke-width: 1;
-                          stroke-dasharray: none;
-                          stroke-linecap: butt;
-                          stroke-linejoin: miter;
-                          stroke-miterlimit: 10;
-                          fill: rgb(0, 0, 0);
-                          fill-rule: nonzero;
-                          opacity: 1;
-                        "
-                        transform=" matrix(1 0 0 1 0 0) "
-                        stroke-linecap="round"
-                      ></path>
-                      <path
-                        d="M 73.007 61.993 c -1.023 0 -2.048 -0.391 -2.828 -1.172 c -1.563 -1.562 -1.563 -4.095 0 -5.656 L 80.343 45 L 70.179 34.836 c -1.563 -1.562 -1.563 -4.095 0 -5.657 c 1.561 -1.562 4.094 -1.562 5.656 0 l 12.993 12.993 C 89.578 42.922 90 43.939 90 45 c 0 1.061 -0.422 2.078 -1.172 2.828 L 75.835 60.821 C 75.055 61.603 74.03 61.993 73.007 61.993 z"
-                        style="
-                          stroke: none;
-                          stroke-width: 1;
-                          stroke-dasharray: none;
-                          stroke-linecap: butt;
-                          stroke-linejoin: miter;
-                          stroke-miterlimit: 10;
-                          fill: rgb(0, 0, 0);
-                          fill-rule: nonzero;
-                          opacity: 1;
-                        "
-                        transform=" matrix(1 0 0 1 0 0) "
-                        stroke-linecap="round"
-                      ></path>
-                    </g>
-                  </g>
-                </svg>
-              </button>
+              <a target="_blank" href="#" class="btn-primary">
+                View all Chopper
+              </a>
             </div>
           </div>
           <div
@@ -518,71 +437,27 @@
                 to use for project marketing and the community will be the one
                 to decide the project
               </div>
-              <button
-                class="rounded-full px-4 py-4 bg-gradient-to-b from-primary to-primaryDark hover:drop-shadow-2xl flex items-center gap-2 absolute -bottom-4 left-1/2"
+              <div
+                class="absolute -bottom-4 left-1/2 -skew-y-6 -translate-x-1/2"
               >
-                <svg
-                  class="w-3 h-auto"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  width="256"
-                  height="256"
-                  viewBox="0 0 256 256"
-                  xml:space="preserve"
+                <button
+                  type="button"
+                  class="text-white bg-primary hover:brightness-90 focus:outline-none font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center"
                 >
-                  <defs></defs>
-                  <g transform="translate(128 128) scale(0.72 0.72)">
-                    <g
-                      style="
-                        stroke: none;
-                        stroke-width: 0;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: none;
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)"
-                    >
-                      <path
-                        d="M 86 49 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 49 86 49 z"
-                        style="
-                          stroke: none;
-                          stroke-width: 1;
-                          stroke-dasharray: none;
-                          stroke-linecap: butt;
-                          stroke-linejoin: miter;
-                          stroke-miterlimit: 10;
-                          fill: rgb(0, 0, 0);
-                          fill-rule: nonzero;
-                          opacity: 1;
-                        "
-                        transform=" matrix(1 0 0 1 0 0) "
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M 73.007 61.993 c -1.023 0 -2.048 -0.391 -2.828 -1.172 c -1.563 -1.562 -1.563 -4.095 0 -5.656 L 80.343 45 L 70.179 34.836 c -1.563 -1.562 -1.563 -4.095 0 -5.657 c 1.561 -1.562 4.094 -1.562 5.656 0 l 12.993 12.993 C 89.578 42.922 90 43.939 90 45 c 0 1.061 -0.422 2.078 -1.172 2.828 L 75.835 60.821 C 75.055 61.603 74.03 61.993 73.007 61.993 z"
-                        style="
-                          stroke: none;
-                          stroke-width: 1;
-                          stroke-dasharray: none;
-                          stroke-linecap: butt;
-                          stroke-linejoin: miter;
-                          stroke-miterlimit: 10;
-                          fill: rgb(0, 0, 0);
-                          fill-rule: nonzero;
-                          opacity: 1;
-                        "
-                        transform=" matrix(1 0 0 1 0 0) "
-                        stroke-linecap="round"
-                      />
-                    </g>
-                  </g>
-                </svg>
-              </button>
+                  <svg
+                    class="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="feature-card bg-primaryDark">
               <img
@@ -595,71 +470,27 @@
                 to use for project marketing and the community will be the one
                 to decide the project
               </div>
-              <button
-                class="rounded-full px-4 py-4 bg-gradient-to-b from-second to-secondDark hover:drop-shadow-2xl flex items-center gap-2 absolute -bottom-4 left-1/2"
+              <div
+                class="absolute -bottom-4 left-1/2 -skew-y-6 -translate-x-1/2"
               >
-                <svg
-                  class="w-3 h-auto"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  width="256"
-                  height="256"
-                  viewBox="0 0 256 256"
-                  xml:space="preserve"
+                <button
+                  type="button"
+                  class="text-white bg-second hover:brightness-90 focus:outline-none font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center"
                 >
-                  <defs></defs>
-                  <g transform="translate(128 128) scale(0.72 0.72)">
-                    <g
-                      style="
-                        stroke: none;
-                        stroke-width: 0;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: none;
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)"
-                    >
-                      <path
-                        d="M 86 49 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 49 86 49 z"
-                        style="
-                          stroke: none;
-                          stroke-width: 1;
-                          stroke-dasharray: none;
-                          stroke-linecap: butt;
-                          stroke-linejoin: miter;
-                          stroke-miterlimit: 10;
-                          fill: rgb(0, 0, 0);
-                          fill-rule: nonzero;
-                          opacity: 1;
-                        "
-                        transform=" matrix(1 0 0 1 0 0) "
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M 73.007 61.993 c -1.023 0 -2.048 -0.391 -2.828 -1.172 c -1.563 -1.562 -1.563 -4.095 0 -5.656 L 80.343 45 L 70.179 34.836 c -1.563 -1.562 -1.563 -4.095 0 -5.657 c 1.561 -1.562 4.094 -1.562 5.656 0 l 12.993 12.993 C 89.578 42.922 90 43.939 90 45 c 0 1.061 -0.422 2.078 -1.172 2.828 L 75.835 60.821 C 75.055 61.603 74.03 61.993 73.007 61.993 z"
-                        style="
-                          stroke: none;
-                          stroke-width: 1;
-                          stroke-dasharray: none;
-                          stroke-linecap: butt;
-                          stroke-linejoin: miter;
-                          stroke-miterlimit: 10;
-                          fill: rgb(0, 0, 0);
-                          fill-rule: nonzero;
-                          opacity: 1;
-                        "
-                        transform=" matrix(1 0 0 1 0 0) "
-                        stroke-linecap="round"
-                      />
-                    </g>
-                  </g>
-                </svg>
-              </button>
+                  <svg
+                    class="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="feature-card bg-secondDark">
               <img
@@ -671,71 +502,27 @@
                 The remaining 2% will be divided equally among the holders,
                 which creates a passive profit for long-term investors.
               </div>
-              <button
-                class="rounded-full px-4 py-4 bg-gradient-to-b from-primary to-primaryDark hover:drop-shadow-2xl flex items-center gap-2 absolute -bottom-4 left-1/2"
+              <div
+                class="absolute -bottom-4 left-1/2 -skew-y-6 -translate-x-1/2"
               >
-                <svg
-                  class="w-3 h-auto"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  width="256"
-                  height="256"
-                  viewBox="0 0 256 256"
-                  xml:space="preserve"
+                <button
+                  type="button"
+                  class="text-white bg-primary hover:brightness-90 focus:outline-none font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center"
                 >
-                  <defs></defs>
-                  <g transform="translate(128 128) scale(0.72 0.72)">
-                    <g
-                      style="
-                        stroke: none;
-                        stroke-width: 0;
-                        stroke-dasharray: none;
-                        stroke-linecap: butt;
-                        stroke-linejoin: miter;
-                        stroke-miterlimit: 10;
-                        fill: none;
-                        fill-rule: nonzero;
-                        opacity: 1;
-                      "
-                      transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)"
-                    >
-                      <path
-                        d="M 86 49 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 49 86 49 z"
-                        style="
-                          stroke: none;
-                          stroke-width: 1;
-                          stroke-dasharray: none;
-                          stroke-linecap: butt;
-                          stroke-linejoin: miter;
-                          stroke-miterlimit: 10;
-                          fill: rgb(0, 0, 0);
-                          fill-rule: nonzero;
-                          opacity: 1;
-                        "
-                        transform=" matrix(1 0 0 1 0 0) "
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M 73.007 61.993 c -1.023 0 -2.048 -0.391 -2.828 -1.172 c -1.563 -1.562 -1.563 -4.095 0 -5.656 L 80.343 45 L 70.179 34.836 c -1.563 -1.562 -1.563 -4.095 0 -5.657 c 1.561 -1.562 4.094 -1.562 5.656 0 l 12.993 12.993 C 89.578 42.922 90 43.939 90 45 c 0 1.061 -0.422 2.078 -1.172 2.828 L 75.835 60.821 C 75.055 61.603 74.03 61.993 73.007 61.993 z"
-                        style="
-                          stroke: none;
-                          stroke-width: 1;
-                          stroke-dasharray: none;
-                          stroke-linecap: butt;
-                          stroke-linejoin: miter;
-                          stroke-miterlimit: 10;
-                          fill: rgb(0, 0, 0);
-                          fill-rule: nonzero;
-                          opacity: 1;
-                        "
-                        transform=" matrix(1 0 0 1 0 0) "
-                        stroke-linecap="round"
-                      />
-                    </g>
-                  </g>
-                </svg>
-              </button>
+                  <svg
+                    class="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -745,29 +532,35 @@
           <div class="flex flex-col md:flex-row gap-10">
             <div class="flex flex-col flex-1">
               <div class="text-3xl font-bold mb-2">
-                How to getting a OChopper for your companion
+                How to getting a ChopperX1000 for your companion
               </div>
               <div>
-                Together with OChopper, bring laughter to children around the
-                world Join the Telegram OChopper community group to chat with
-                him weekly. Let's build a healthy environment together for
+                Together with ChopperX1000, bring laughter to children around
+                the world Join the Telegram ChopperX1000 community group to chat
+                with him weekly. Let's build a healthy environment together for
                 investors and sponsors to provide free meals to children around
                 the world. Let's be for a community that is always filled with
                 children's laughter.
               </div>
               <div class="flex mt-5 gap-4">
                 <button
-                  class="border rounded-2xl px-4 py-2 bg-gradient-to-b from-primary to-primaryDark hover:drop-shadow-2xl flex items-center gap-2 w-full justify-center"
+                  class="flex-1 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-primary to-second group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
                 >
-                  Join Telegram
+                  <span
+                    class="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#343b41] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                  >
+                    Join Telegram
+                  </span>
                 </button>
-                <a
-                  target="_blank"
-                  href="https://sweepwidget.com/view/55927-8bfgvj0s"
-                  class="border rounded-2xl px-4 py-2 bg-gradient-to-b from-primary to-primaryDark hover:drop-shadow-lg cursor-pointer flex items-center gap-2 w-full justify-center"
+                <button
+                  class="flex-1 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-primary to-second group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
                 >
-                  Join Whitelist
-                </a>
+                  <span
+                    class="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#343b41] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                  >
+                    Join Whitelist
+                  </span>
+                </button>
               </div>
             </div>
             <div class="flex-1">
@@ -798,12 +591,12 @@
             </div>
             <div class="flex-1">
               <div class="font-bold text-4xl mb-4">
-                What make OChopper different
+                What make ChopperX1000 different
               </div>
               <div class="mb-10">
-                During OChopper's Mission, holders will be able to earn rewards
-                for staking, farming, P2E gaming and more. But, most
-                importantly, OChopper will reach out to a broader network of
+                During ChopperX1000's Mission, holders will be able to earn
+                rewards for staking, farming, P2E gaming and more. But, most
+                importantly, ChopperX1000 will reach out to a broader network of
                 individuals and groups, beyond those who understand and invest
                 in charitable giving around the world.
               </div>
@@ -819,68 +612,20 @@
                       problems quickly and perfectly.
                     </div>
                     <button
-                      class="rounded-full px-4 py-4 bg-gradient-to-b from-primary to-primaryDark hover:drop-shadow-2xl flex items-center gap-2 w-fit"
+                      type="button"
+                      class="w-fit text-second border border-second hover:bg-second hover:text-white font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2"
                     >
                       <svg
-                        class="w-3 h-auto"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        version="1.1"
-                        width="256"
-                        height="256"
-                        viewBox="0 0 256 256"
-                        xml:space="preserve"
                       >
-                        <defs></defs>
-                        <g transform="translate(128 128) scale(0.72 0.72)">
-                          <g
-                            style="
-                              stroke: none;
-                              stroke-width: 0;
-                              stroke-dasharray: none;
-                              stroke-linecap: butt;
-                              stroke-linejoin: miter;
-                              stroke-miterlimit: 10;
-                              fill: none;
-                              fill-rule: nonzero;
-                              opacity: 1;
-                            "
-                            transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)"
-                          >
-                            <path
-                              d="M 86 49 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 49 86 49 z"
-                              style="
-                                stroke: none;
-                                stroke-width: 1;
-                                stroke-dasharray: none;
-                                stroke-linecap: butt;
-                                stroke-linejoin: miter;
-                                stroke-miterlimit: 10;
-                                fill: rgb(0, 0, 0);
-                                fill-rule: nonzero;
-                                opacity: 1;
-                              "
-                              transform=" matrix(1 0 0 1 0 0) "
-                              stroke-linecap="round"
-                            ></path>
-                            <path
-                              d="M 73.007 61.993 c -1.023 0 -2.048 -0.391 -2.828 -1.172 c -1.563 -1.562 -1.563 -4.095 0 -5.656 L 80.343 45 L 70.179 34.836 c -1.563 -1.562 -1.563 -4.095 0 -5.657 c 1.561 -1.562 4.094 -1.562 5.656 0 l 12.993 12.993 C 89.578 42.922 90 43.939 90 45 c 0 1.061 -0.422 2.078 -1.172 2.828 L 75.835 60.821 C 75.055 61.603 74.03 61.993 73.007 61.993 z"
-                              style="
-                                stroke: none;
-                                stroke-width: 1;
-                                stroke-dasharray: none;
-                                stroke-linecap: butt;
-                                stroke-linejoin: miter;
-                                stroke-miterlimit: 10;
-                                fill: rgb(0, 0, 0);
-                                fill-rule: nonzero;
-                                opacity: 1;
-                              "
-                              transform=" matrix(1 0 0 1 0 0) "
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </g>
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
                       </svg>
                     </button>
                   </div>
@@ -891,71 +636,24 @@
                     <div class="mb-4">
                       We do not tolerate FUD in the chats, all FUD will be
                       banned in order to protect the community and the growth of
-                      OChopper. We represent positivity and a strong community.
+                      ChopperX1000. We represent positivity and a strong
+                      community.
                     </div>
                     <button
-                      class="rounded-full px-4 py-4 bg-gradient-to-b from-primary to-primaryDark hover:drop-shadow-2xl flex items-center gap-2 w-fit"
+                      type="button"
+                      class="w-fit text-second border border-second hover:bg-second hover:text-white font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2"
                     >
                       <svg
-                        class="w-3 h-auto"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        version="1.1"
-                        width="256"
-                        height="256"
-                        viewBox="0 0 256 256"
-                        xml:space="preserve"
                       >
-                        <defs></defs>
-                        <g transform="translate(128 128) scale(0.72 0.72)">
-                          <g
-                            style="
-                              stroke: none;
-                              stroke-width: 0;
-                              stroke-dasharray: none;
-                              stroke-linecap: butt;
-                              stroke-linejoin: miter;
-                              stroke-miterlimit: 10;
-                              fill: none;
-                              fill-rule: nonzero;
-                              opacity: 1;
-                            "
-                            transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)"
-                          >
-                            <path
-                              d="M 86 49 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 49 86 49 z"
-                              style="
-                                stroke: none;
-                                stroke-width: 1;
-                                stroke-dasharray: none;
-                                stroke-linecap: butt;
-                                stroke-linejoin: miter;
-                                stroke-miterlimit: 10;
-                                fill: rgb(0, 0, 0);
-                                fill-rule: nonzero;
-                                opacity: 1;
-                              "
-                              transform=" matrix(1 0 0 1 0 0) "
-                              stroke-linecap="round"
-                            ></path>
-                            <path
-                              d="M 73.007 61.993 c -1.023 0 -2.048 -0.391 -2.828 -1.172 c -1.563 -1.562 -1.563 -4.095 0 -5.656 L 80.343 45 L 70.179 34.836 c -1.563 -1.562 -1.563 -4.095 0 -5.657 c 1.561 -1.562 4.094 -1.562 5.656 0 l 12.993 12.993 C 89.578 42.922 90 43.939 90 45 c 0 1.061 -0.422 2.078 -1.172 2.828 L 75.835 60.821 C 75.055 61.603 74.03 61.993 73.007 61.993 z"
-                              style="
-                                stroke: none;
-                                stroke-width: 1;
-                                stroke-dasharray: none;
-                                stroke-linecap: butt;
-                                stroke-linejoin: miter;
-                                stroke-miterlimit: 10;
-                                fill: rgb(0, 0, 0);
-                                fill-rule: nonzero;
-                                opacity: 1;
-                              "
-                              transform=" matrix(1 0 0 1 0 0) "
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </g>
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
                       </svg>
                     </button>
                   </div>
@@ -969,68 +667,20 @@
                       $OCHOPPER and HOLD.
                     </div>
                     <button
-                      class="rounded-full px-4 py-4 bg-gradient-to-b from-primary to-primaryDark hover:drop-shadow-2xl flex items-center gap-2 w-fit"
+                      type="button"
+                      class="w-fit text-second border border-second hover:bg-second hover:text-white font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2"
                     >
                       <svg
-                        class="w-3 h-auto"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        version="1.1"
-                        width="256"
-                        height="256"
-                        viewBox="0 0 256 256"
-                        xml:space="preserve"
                       >
-                        <defs></defs>
-                        <g transform="translate(128 128) scale(0.72 0.72)">
-                          <g
-                            style="
-                              stroke: none;
-                              stroke-width: 0;
-                              stroke-dasharray: none;
-                              stroke-linecap: butt;
-                              stroke-linejoin: miter;
-                              stroke-miterlimit: 10;
-                              fill: none;
-                              fill-rule: nonzero;
-                              opacity: 1;
-                            "
-                            transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)"
-                          >
-                            <path
-                              d="M 86 49 H 4 c -2.209 0 -4 -1.791 -4 -4 s 1.791 -4 4 -4 h 82 c 2.209 0 4 1.791 4 4 S 88.209 49 86 49 z"
-                              style="
-                                stroke: none;
-                                stroke-width: 1;
-                                stroke-dasharray: none;
-                                stroke-linecap: butt;
-                                stroke-linejoin: miter;
-                                stroke-miterlimit: 10;
-                                fill: rgb(0, 0, 0);
-                                fill-rule: nonzero;
-                                opacity: 1;
-                              "
-                              transform=" matrix(1 0 0 1 0 0) "
-                              stroke-linecap="round"
-                            ></path>
-                            <path
-                              d="M 73.007 61.993 c -1.023 0 -2.048 -0.391 -2.828 -1.172 c -1.563 -1.562 -1.563 -4.095 0 -5.656 L 80.343 45 L 70.179 34.836 c -1.563 -1.562 -1.563 -4.095 0 -5.657 c 1.561 -1.562 4.094 -1.562 5.656 0 l 12.993 12.993 C 89.578 42.922 90 43.939 90 45 c 0 1.061 -0.422 2.078 -1.172 2.828 L 75.835 60.821 C 75.055 61.603 74.03 61.993 73.007 61.993 z"
-                              style="
-                                stroke: none;
-                                stroke-width: 1;
-                                stroke-dasharray: none;
-                                stroke-linecap: butt;
-                                stroke-linejoin: miter;
-                                stroke-miterlimit: 10;
-                                fill: rgb(0, 0, 0);
-                                fill-rule: nonzero;
-                                opacity: 1;
-                              "
-                              transform=" matrix(1 0 0 1 0 0) "
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </g>
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
                       </svg>
                     </button>
                   </div>
@@ -1048,7 +698,14 @@
           <div class="font-bold text-4xl mb-4 text-center">Tokenomics</div>
           <div class="flex">
             <div class="flex-1 animate__animated animate__fadeOut baby__left">
-              <canvas id="myChart"></canvas>
+              <div>
+                <canvas id="myChart"> </canvas>
+                <img
+                  class="w-[155px] absolute left-1/2 top-[78px] -translate-x-1/2"
+                  src="/assets/images/ochopper/Logo 1.png"
+                  alt=""
+                />
+              </div>
               <div
                 class="ova-details-v3 scale-100 md:scale-150 origin-top mt-8 flex items-center justify-center pl-0 d:pl-10"
               >
@@ -1699,14 +1356,16 @@
 
         <section class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32">
           <div
-            class="bg-gradient-to-b from-second to-secondDark rounded-2xl p-8 relative"
+            class="bg-gradient-to-br from-primary to-second rounded-2xl p-8 relative"
           >
             <div class="ml-0 md:ml-56">
-              <div class="font-bold text-2xl mb-4">Connect with OChopper</div>
+              <div class="font-bold text-2xl mb-4">
+                Connect with ChopperX1000
+              </div>
               <div class="mb-4">
-                Together with OChopper, bring laughter to children around the
-                world Join the Telegram OChopper community group to chat with
-                him weekly. Let's build a healthy environment together for
+                Together with ChopperX1000, bring laughter to children around
+                the world Join the Telegram ChopperX1000 community group to chat
+                with him weekly. Let's build a healthy environment together for
                 investors and sponsors to provide free meals to children around
                 the world. Let's be for a community that is always filled with
                 children's laughter.
@@ -1715,7 +1374,7 @@
                 <input
                   type="text"
                   class="h-9 flex-1 rounded-l-lg px-4 w-3/4 md:w-auto"
-                  placeholder="support@babysanji.club"
+                  placeholder="support@chopperx1000.com"
                 />
                 <button class="h-9 bg-primaryDark px-4 rounded-r-lg">
                   Subscribe
@@ -1731,7 +1390,7 @@
         </section>
       </div>
 
-      <footer class="bg-[#D1E3DD] border-t mt-32">
+      <!-- <footer class="bg-main border-t mt-32">
         <div
           class="flex flex-col md:flex-row justify-between items-center container mx-auto px-4 max-w-screen-xl py-4"
         >
@@ -1823,7 +1482,7 @@
             </a>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
     <!--====== Main js ======-->
     <script src="assets/js/babysanji.js"></script>
