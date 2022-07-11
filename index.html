@@ -58,7 +58,7 @@
           @apply relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-full after:bg-[#8384DF] after:ease-in after:duration-200 after:-z-10 hover:after:w-full;
         }
         .icon-hover {
-          @apply hover:text-secondDark hover:border-secondDark;
+          @apply hover:text-titleTo hover:border-titleFrom;
         }
         .header-sticky {
           @apply sticky top-0 bg-main shadow-xl bg-main;
@@ -67,8 +67,9 @@
         .nav-item {
           @apply px-3 py-2 rounded-md cursor-pointer hover:bg-white/10 font-bold;
         }
+
         section {
-          @apply mb-32;
+          /* @apply mb-32; */
         }
 
         .btn-primary {
@@ -87,19 +88,23 @@
         theme: {
           extend: {
             colors: {
-              primaryColor: '#8384DF',
-              main: '#3B444B',
-              primary: '#f68887',
-              primaryDark: '#f68887',
-              second: '#54a0cf',
-              secondDark: '#54a0cf',
+              primaryColor: "#8384DF",
+              main: "#141420",
+              primary: "#FF577A",
+              primaryDark: "#FF577A",
+              second: "#FE8D7B",
+              secondDark: "#FE8D7B",
+              titleFrom: "#FDA0B1",
+              titleTo: "#FB5875",
             },
+
             backgroundImage: {
-              'footer-banner': "url('/assets/images/footer-banner.jpg')",
+              "footer-banner": "url('/assets/images/footer-banner.jpg')",
+              roadmap: "url('/assets/images/ochopper/bkg-roadmap.png')",
             },
             fontFamily: {
-              gothamBlack: ['GothamBlack', 'sans-serif'],
-              notoSans: ['Noto Sans', 'sans-serif'],
+              gothamBlack: ["GothamBlack", "sans-serif"],
+              notoSans: ["Noto Sans", "sans-serif"],
             },
           },
         },
@@ -203,15 +208,17 @@
 
       <div>
         <section
-          class="container mx-auto px-4 max-w-screen-xl flex flex-col md:flex-row pt-4 md:pt-8"
+          class="container mb-32 mx-auto px-4 max-w-screen-xl flex flex-col md:flex-row pt-4 md:pt-8"
           id="home"
         >
           <div
             class="flex flex-1 flex-col pt-40 animate__animated animate__fadeInUp"
           >
             <div class="font-bold text-5xl mb-8">
-              <span class="text-second">CHOPPER</span
-              ><span class="text-primary">X1000</span>
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-b from-titleFrom to-titleTo"
+                >CHOPPERX1000</span
+              >
             </div>
             <div class="flex items-center gap-4 mb-4 md:mb-16">
               <!-- <img class="w-28 md:w-24" src="/assets/images/Logo3.png" alt="" /> -->
@@ -241,7 +248,7 @@
                   width="32"
                   height="32"
                   viewBox="0 0 50 50"
-                  class="border rounded-lg p-1 text-primaryDark icon-hover"
+                  class="border rounded-lg p-1 icon-hover"
                   fill="currentColor"
                 >
                   <path
@@ -257,7 +264,7 @@
                   width="32"
                   height="32"
                   viewBox="0 0 50 50"
-                  class="border rounded-lg p-1 text-primaryDark icon-hover"
+                  class="border rounded-lg p-1 icon-hover"
                   fill="currentColor"
                 >
                   <path
@@ -273,7 +280,7 @@
                   width="32"
                   height="32"
                   viewBox="0 0 50 50"
-                  class="border rounded-lg p-1 text-primaryDark icon-hover"
+                  class="border rounded-lg p-1 icon-hover"
                   fill="currentColor"
                 >
                   <path
@@ -289,7 +296,7 @@
                   width="32"
                   height="32"
                   viewBox="0 0 30 30"
-                  class="border rounded-lg p-1 text-primaryDark icon-hover"
+                  class="border rounded-lg p-1 icon-hover"
                   fill="currentColor"
                 >
                   <path
@@ -305,7 +312,7 @@
                   width="32"
                   height="32"
                   viewBox="0 0 24 24"
-                  class="border rounded-lg p-1 text-primaryDark icon-hover"
+                  class="border rounded-lg p-1 icon-hover"
                   fill="currentColor"
                 >
                   <path
@@ -327,89 +334,48 @@
           </div>
         </section>
 
-        <section
-          id="testimoni"
-          class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32"
-        >
-          <div
-            class="bg-gradient-to-b from-[#343b41] to-[#343b41] p-4 py-8 rounded-2xl"
-          >
-            <div class="flex items-center flex-col md:flex-row">
-              <div class="flex-1 flex flex-col md:flex-row">
-                <div
-                  class="flex-1 flex flex-col items-center justify-between text-center mb-4 md:mb-0"
-                >
-                  <div>Audited by Coinscope</div>
-                  <button
-                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-primary to-second group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
-                  >
-                    <span
-                      class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#343b41] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
-                    >
-                      View Audit
-                    </span>
-                  </button>
-                </div>
-                <div
-                  class="flex-1 flex flex-col items-center justify-between text-center mb-4 md:mb-0"
-                >
-                  <div>Team is KYC verified by Coinscope</div>
+        <section class="border-t border-dashed border-slate-600 flex mb-8">
+          <div class="flex-1 flex justify-center relative">
+            <div
+              class="p-4 bg-titleFrom w-8 h-8 rounded-full absolute left-1/2 -top-4 -translate-x-1/2"
+            ></div>
+            <div class="flex flex-col justify-center items-center mt-4">
+              <div class="font-bold">View Audit</div>
+              <div>Audited by Coinscope</div>
+            </div>
+          </div>
+          <div class="flex-1 flex justify-center relative">
+            <div
+              class="p-4 shadow-2xl bg-titleFrom w-8 h-8 rounded-full absolute left-1/2 -top-4 -translate-x-1/2"
+            ></div>
+            <div class="flex flex-col justify-center items-center mt-4">
+              <div class="font-bold">View Audit</div>
+              <div>Audited by Coinscope</div>
+            </div>
+          </div>
 
-                  <button
-                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-primary to-second group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
-                  >
-                    <span
-                      class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#343b41] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
-                    >
-                      View KYC
-                    </span>
-                  </button>
-                </div>
-                <div
-                  class="flex-1 flex flex-col items-center justify-between text-center mb-4 md:mb-0"
-                >
-                  <div>Contract created by the ChopperX1000</div>
-
-                  <button
-                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-primary to-second group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
-                  >
-                    <span
-                      class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#343b41] dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
-                    >
-                      View Contract
-                    </span>
-                  </button>
-                </div>
-              </div>
-              <div class="flex-1 -order-1 md:order-none">
-                <div
-                  class="flex gap-4 items-center pl-0 md:pl-10 border-b md:border-b-0 md:border-l"
-                >
-                  <img
-                    class="flex-1 w-28 md:w-32 h-auto"
-                    src="/assets/images/ochopper/chopper_9.png"
-                    alt=""
-                  />
-                  <div>
-                    <div class="font-bold">ChopperX1000</div>
-                    <div>
-                      I will surpass my father and reach my new goal 1000x.
-                      Follow me and together we will achieve it.
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="flex-1 flex justify-center relative">
+            <div
+              class="p-4 shadow-2xl bg-titleFrom w-8 h-8 rounded-full absolute left-1/2 -top-4 -translate-x-1/2"
+            ></div>
+            <div class="flex flex-col justify-center items-center mt-4">
+              <div class="font-bold">View Audit</div>
+              <div>Audited by Coinscope</div>
             </div>
           </div>
         </section>
 
         <section
           id="about"
-          class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32"
+          class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32 mb-32"
         >
           <div class="flex gap-10 mb-40 item flex-col md:flex-row">
             <div class="flex-1 flex flex-col gap-4">
-              <div class="font-bold text-4xl">Featured Cute ChopperX1000</div>
+              <div
+                class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-titleFrom to-titleTo"
+              >
+                Featured Cute ChopperX1000
+              </div>
               <div>
                 As a boy born with a gift for cooking, he inherited all of his
                 father's talents. He has a crazy passion for cooking, his
@@ -527,11 +493,15 @@
           </div>
         </section>
 
-        <section class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32">
+        <section
+          class="container mx-auto px-4 max-w-screen-xl pt-8 md:pt-16 bg-[#201F2D]"
+        >
           <!-- <div class="text-center w-full title-section mb-6">Who are Sanji?</div> -->
           <div class="flex flex-col md:flex-row gap-10">
             <div class="flex flex-col flex-1">
-              <div class="text-3xl font-bold mb-2">
+              <div
+                class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-titleFrom to-titleTo"
+              >
                 How to getting a ChopperX1000 for your companion
               </div>
               <div>
@@ -573,7 +543,9 @@
           </div>
         </section>
 
-        <section class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32">
+        <section
+          class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32 bg-[#201F2D] pb-16"
+        >
           <div class="flex gap-4 flex-col md:flex-row">
             <div
               class="flex-row md:flex-col gap-4 flex-1 order-last md:order-none flex justify-center"
@@ -590,7 +562,9 @@
               /> -->
             </div>
             <div class="flex-1">
-              <div class="font-bold text-4xl mb-4">
+              <div
+                class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-titleFrom to-titleTo"
+              >
                 What make ChopperX1000 different
               </div>
               <div class="mb-10">
@@ -695,61 +669,66 @@
           id="tokenomics"
           class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32"
         >
-          <div class="font-bold text-4xl mb-4 text-center">Tokenomics</div>
-          <div class="flex">
-            <div class="flex-1 animate__animated animate__fadeOut baby__left">
+          <div
+            class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-titleFrom to-titleTo"
+          >
+            Tokenomics
+          </div>
+          <div class="flex justify-center">
+            <div class="flex-1 flex flex-col justify-center gap-8">
               <div>
-                <canvas id="myChart"> </canvas>
-                <img
-                  class="w-[155px] absolute left-1/2 top-[78px] -translate-x-1/2"
-                  src="/assets/images/ochopper/Logo 1.png"
-                  alt=""
-                />
-              </div>
-              <div
-                class="ova-details-v3 scale-100 md:scale-150 origin-top mt-8 flex items-center justify-center pl-0 d:pl-10"
-              >
-                <div class="details-wrapper column2">
-                  <div class="item item-1">
-                    <h2 class="title">65.70%</h2>
-                    <p class="description">Presale</p>
-                  </div>
-                  <div class="item item-2">
-                    <h2 class="title">32.77%</h2>
-                    <p class="description">Liquidity</p>
-                  </div>
-                  <div class="item item-3">
-                    <h2 class="title">1.44%</h2>
-                    <p class="description">Unicrypt Fee</p>
-                  </div>
-                  <div class="item item-4">
-                    <h2 class="title">0.09%</h2>
-                    <p class="description">Burnt</p>
-                  </div>
+                <div class="mb-1 text-base font-medium">Presale: 65.7%"</div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="bg-[#143F6B] h-2.5 rounded-full"
+                    style="width: 65.7%"
+                  ></div>
                 </div>
-                <img
-                  class="flex-1 w-12 h-auto md:hidden"
-                  src="/assets/images/ochopper/chopper_10.png"
-                  alt=""
-                />
+              </div>
+              <div>
+                <div class="mb-1 text-base font-medium">Liquidity: 32.77%"</div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="bg-[#F55353] h-2.5 rounded-full"
+                    style="width: 32.77%"
+                  ></div>
+                </div>
               </div>
             </div>
-            <div class="flex-1 hidden md:flex flex-col text-center">
-              <img
-                class="animate__animated animate__fadeOut baby__right"
-                src="/assets/images/ochopper/chopper_10.png"
-                alt=""
-              />
+            <div class="flex-1 animate__animated animate__fadeOut baby__left">
+              <canvas id="myChart"></canvas>
+            </div>
+            <div class="flex-1 flex flex-col justify-center gap-8">
+              <div>
+                <div class="mb-1 text-base font-medium">
+                  Unicrypt Fee: 1.44%"
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="bg-[#FEB139] h-2.5 rounded-full"
+                    style="width: 1.44%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="mb-1 text-base font-medium">Burnt: 0.09%"</div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div
+                    class="bg-[#F6F54D] h-2.5 rounded-full"
+                    style="width: 0.09%"
+                  ></div>
+                </div>
+              </div>
             </div>
           </div>
 
           <script>
-            var xValues = ['Presale', 'Liquidity', 'Unicrypt Fee', 'Burnt'];
+            var xValues = ["Presale", "Liquidity", "Unicrypt Fee", "Burnt"];
             var yValues = [65.7, 32.77, 1.44, 0.09];
-            var barColors = ['#143F6B', '#F55353', '#FEB139', '#F6F54D'];
+            var barColors = ["#143F6B", "#F55353", "#FEB139", "#F6F54D"];
 
-            new Chart('myChart', {
-              type: 'doughnut',
+            new Chart("myChart", {
+              type: "doughnut",
               data: {
                 labels: xValues,
                 datasets: [
@@ -778,8 +757,12 @@
           id="roadmap"
           class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32"
         >
-          <div class="font-bold text-4xl mb-4 text-center">Roadmap</div>
-          <div class="ova-road-map-advanced">
+          <div
+            class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-titleFrom to-titleTo text-center"
+          >
+            Roadmap
+          </div>
+          <div class="ova-road-map-advanced bg-roadmap">
             <!-- Desktop -->
             <div class="road-map-advanced">
               <div class="timeline-row timeline-row-odd">
@@ -1247,7 +1230,11 @@
           id="team"
           class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32"
         >
-          <div class="font-bold text-4xl mb-4 text-center">Our Team</div>
+          <div
+            class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-titleFrom to-titleTo text-center"
+          >
+            Our Team
+          </div>
           <div class="flex justify-center md:justify-around flex-wrap">
             <div
               class="text-center w-1/3 md:w-max group hover:bg-white hover:shadow-2xl p-4 rounded-lg animate__animated animate__fadeOut baby__right"
@@ -1256,7 +1243,7 @@
                 class="border-2 rounded-full w-auto h-auto md:w-48 md:h-48 flex justify-center items-center group-hover:border-primaryDark mx-auto"
               >
                 <div
-                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-primary to-primaryDark rounded-full flex items-center justify-center"
+                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-[#FFC2A1] to-[#FFB0BC] rounded-full flex items-center justify-center"
                 >
                   <img
                     class="w-auto"
@@ -1275,7 +1262,7 @@
                 class="border-2 rounded-full w-auto h-auto md:w-48 md:h-48 flex justify-center items-center group-hover:border-primaryDark mx-auto"
               >
                 <div
-                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-primary to-primaryDark rounded-full flex items-center justify-center"
+                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-[#FFC2A1] to-[#FFB0BC] rounded-full flex items-center justify-center"
                 >
                   <img
                     class="w-auto"
@@ -1298,7 +1285,7 @@
                 class="border-2 rounded-full w-auto h-auto md:w-48 md:h-48 flex justify-center items-center group-hover:border-primaryDark mx-auto"
               >
                 <div
-                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-primary to-primaryDark rounded-full flex items-center justify-center"
+                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-[#FFC2A1] to-[#FFB0BC] rounded-full flex items-center justify-center"
                 >
                   <img
                     class="w-auto"
@@ -1317,7 +1304,7 @@
                 class="border-2 rounded-full w-auto h-auto md:w-48 md:h-48 flex justify-center items-center group-hover:border-primaryDark mx-auto"
               >
                 <div
-                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-primary to-primaryDark rounded-full flex items-center justify-center"
+                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-[#FFC2A1] to-[#FFB0BC] rounded-full flex items-center justify-center"
                 >
                   <img
                     class="w-auto"
@@ -1339,7 +1326,7 @@
                 class="border-2 rounded-full w-auto h-auto md:w-48 md:h-48 flex justify-center items-center group-hover:border-primaryDark mx-auto"
               >
                 <div
-                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-primary to-primaryDark rounded-full flex items-center justify-center"
+                  class="w-auto h-auto m-2 p-2 md:p-4 bg-gradient-to-b from-[#FFC2A1] to-[#FFB0BC] rounded-full flex items-center justify-center"
                 >
                   <img
                     class="w-auto"
@@ -1488,10 +1475,10 @@
     <script src="assets/js/babysanji.js"></script>
     <script>
       function toggleMenu() {
-        const menu = document.getElementById('navbarOne');
-        menu.classList.toggle('hidden');
-        menu.classList.toggle('-right-[100vw]');
-        menu.classList.toggle('right-0');
+        const menu = document.getElementById("navbarOne");
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("-right-[100vw]");
+        menu.classList.toggle("right-0");
       }
     </script>
   </body>
