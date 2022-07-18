@@ -11,7 +11,6 @@ window.onload = () => {
     ),
   ];
   const handleFade = (windowOffset) => {
-    console.log({ windowOffset });
     refs.forEach((ele) => {
       const eleOffset = ele.offsetTop;
       if (windowOffset > eleOffset - screen.height / 2 - 200) {
@@ -26,7 +25,6 @@ window.onload = () => {
           return;
         }
 
-        console.log('run here', { ele, eleOffset });
         ele.classList.add('animate__fadeInUp');
         ele.classList.remove('animate__fadeOut');
       }
@@ -50,6 +48,9 @@ window.onload = () => {
 
   // img-feature position
   const tokenImgs = document.querySelectorAll('.img-feature');
+  const tokenItems = document.querySelectorAll('.featured-wrapper');
+  const featuredWrapper = document.querySelector('.featured-wrapper');
+
   const handlePositionToken = () => {
     tokenImgs.forEach((img) => {
       const nextDiv = img.nextElementSibling;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Ochopper</title>
+    <title>Chopper7Dao</title>
 
     <link
       href="/assets/favicon_io/favicon.ico"
@@ -40,7 +40,7 @@
           @apply text-4xl font-bold;
         }
         .feature-card {
-          @apply flex-1 rounded-2xl bg-white relative p-4 skew-y-6 pb-10 max-w-[300px];
+          @apply flex-1 rounded-2xl bg-white relative p-4 skew-y-6 pb-10 max-w-[300px] self-stretch;
         }
         .feature-card > img {
           @apply absolute left-1/2 -skew-y-6 w-full -translate-x-1/2;
@@ -88,23 +88,23 @@
         theme: {
           extend: {
             colors: {
-              primaryColor: "#8384DF",
-              main: "#141420",
-              primary: "#FF577A",
-              primaryDark: "#FF577A",
-              second: "#FE8D7B",
-              secondDark: "#FE8D7B",
-              titleFrom: "#FDA0B1",
-              titleTo: "#FB5875",
+              primaryColor: '#8384DF',
+              main: '#141420',
+              primary: '#FF577A',
+              primaryDark: '#FF577A',
+              second: '#FE8D7B',
+              secondDark: '#FE8D7B',
+              titleFrom: '#FDA0B1',
+              titleTo: '#FB5875',
             },
 
             backgroundImage: {
-              "footer-banner": "url('/assets/images/footer-banner.jpg')",
+              'footer-banner': "url('/assets/images/footer-banner.jpg')",
               roadmap: "url('/assets/images/ochopper/bkg-roadmap.png')",
             },
             fontFamily: {
-              gothamBlack: ["GothamBlack", "sans-serif"],
-              notoSans: ["Noto Sans", "sans-serif"],
+              gothamBlack: ['GothamBlack', 'sans-serif'],
+              notoSans: ['Noto Sans', 'sans-serif'],
             },
           },
         },
@@ -135,7 +135,7 @@
               >
                 <a class="mr-4" href="index.html">
                   <img
-                    class="w-44 h-auto"
+                    class="w-60 h-auto"
                     src="assets/images/ochopper/Logo 3.png"
                     alt="Logo"
                   />
@@ -227,11 +227,7 @@
               </div>
             </div>
             <div class="flex items-center gap-8 mb-4">
-              <a
-                target="_blank"
-                href="https://t.me/babysanjiinucm"
-                class="btn-primary"
-              >
+              <a target="_blank" href="https://t.me/C7DAO" class="btn-primary">
                 JOIN THE COMMUNITY
               </a>
             </div>
@@ -284,7 +280,7 @@
                   ></path>
                 </svg>
               </a>
-              <a href="https://t.me/babysanjiinucm" target="_blank">
+              <a href="https://t.me/C7DAO" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -347,8 +343,8 @@
               class="p-4 shadow-2xl bg-titleFrom w-8 h-8 rounded-full absolute left-1/2 -top-4 -translate-x-1/2"
             ></div>
             <div class="flex flex-col justify-center items-center mt-4">
-              <div class="font-bold">View Audit</div>
-              <div>Audited by Coinscope</div>
+              <div class="font-bold">View KYC</div>
+              <div>Team is KYC verified by Coinscope</div>
             </div>
           </div>
 
@@ -357,8 +353,14 @@
               class="p-4 shadow-2xl bg-titleFrom w-8 h-8 rounded-full absolute left-1/2 -top-4 -translate-x-1/2"
             ></div>
             <div class="flex flex-col justify-center items-center mt-4">
-              <div class="font-bold">View Audit</div>
-              <div>Audited by Coinscope</div>
+              <div class="font-bold">
+                <a
+                  target="_blank"
+                  href="https://bscscan.com/address/0x5e3f8124d7b7e82aeacb5c1f5097b6fa6b9c126d#code"
+                  >View Contract</a
+                >
+              </div>
+              <div>Contract created by the Chopper</div>
             </div>
           </div>
         </section>
@@ -367,7 +369,7 @@
           id="about"
           class="container mx-auto px-4 max-w-screen-xl pt-16 md:pt-32 mb-32"
         >
-          <div class="flex gap-10 mb-40 item flex-col md:flex-row">
+          <div class="flex gap-10 mb-52 item flex-col md:flex-row">
             <div class="flex-1 flex flex-col gap-4">
               <div
                 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-titleFrom to-titleTo"
@@ -388,7 +390,7 @@
             </div>
           </div>
           <div
-            class="flex gap-48 md:gap-16 flex-col justify-center md:flex-row items-center animate__animated animate__fadeOut"
+            class="flex gap-48 md:gap-16 flex-col justify-center md:flex-row items-center animate__animated animate__fadeOut featured-wrapper"
           >
             <div class="feature-card bg-secondDark">
               <img
@@ -397,9 +399,11 @@
                 alt="chopper"
               />
               <div class="text-justify">
-                Liquidity will be locked, the developer team will only hold 2%
-                to use for project marketing and the community will be the one
-                to decide the project
+                There will be 4% in fee Buyback, after each discount according
+                to the system Auto Redeem will be activated up to 50% of total
+                BuyBack Wallet, the developer team will only hold 4% to use for
+                project marketing and the community will be the one to decide
+                the project
               </div>
               <div
                 class="absolute -bottom-4 left-1/2 -skew-y-6 -translate-x-1/2"
@@ -430,7 +434,7 @@
                 alt="chopper"
               />
               <div class="text-justify">
-                Liquidity will be locked, the developer team will only hold 2%
+                Liquidity will be locked, the developer team will only hold 4%
                 to use for project marketing and the community will be the one
                 to decide the project
               </div>
@@ -463,7 +467,7 @@
                 alt="chopper"
               />
               <div class="text-justify">
-                The remaining 2% will be divided equally among the holders,
+                The remaining 4% will be divided equally among the holders,
                 which creates a passive profit for long-term investors.
               </div>
               <div
@@ -723,12 +727,12 @@
           </div>
 
           <script>
-            var xValues = ["Presale", "Liquidity", "Unicrypt Fee", "Burnt"];
+            var xValues = ['Presale', 'Liquidity', 'Unicrypt Fee', 'Burnt'];
             var yValues = [65.7, 32.77, 1.44, 0.09];
-            var barColors = ["#143F6B", "#F55353", "#FEB139", "#F6F54D"];
+            var barColors = ['#143F6B', '#F55353', '#FEB139', '#F6F54D'];
 
-            new Chart("myChart", {
-              type: "doughnut",
+            new Chart('myChart', {
+              type: 'doughnut',
               data: {
                 labels: xValues,
                 datasets: [
@@ -1406,7 +1410,7 @@
                       ></path>
                     </svg>
                   </a>
-                  <a href="https://twitter.com/BabySanjiinu_tw" target="_blank">
+                  <a href="https://twitter.com/C7DAO" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -1422,7 +1426,7 @@
                       ></path>
                     </svg>
                   </a>
-                  <a href="https://t.me/babysanjiinucm" target="_blank">
+                  <a href="https://t.me/C7DAO" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -1524,7 +1528,7 @@
                 ></path>
               </svg>
             </a>
-            <a href="https://t.me/babysanjiinucm" target="_blank">
+            <a href="https://t.me/C7DAO" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -1564,10 +1568,10 @@
     <script src="assets/js/babysanji.js"></script>
     <script>
       function toggleMenu() {
-        const menu = document.getElementById("navbarOne");
-        menu.classList.toggle("hidden");
-        menu.classList.toggle("-right-[100vw]");
-        menu.classList.toggle("right-0");
+        const menu = document.getElementById('navbarOne');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('-right-[100vw]');
+        menu.classList.toggle('right-0');
       }
     </script>
   </body>
