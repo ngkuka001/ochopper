@@ -88,23 +88,23 @@
         theme: {
           extend: {
             colors: {
-              primaryColor: '#8384DF',
-              main: '#141420',
-              primary: '#FF577A',
-              primaryDark: '#FF577A',
-              second: '#FE8D7B',
-              secondDark: '#FE8D7B',
-              titleFrom: '#FDA0B1',
-              titleTo: '#FB5875',
+              primaryColor: "#8384DF",
+              main: "#141420",
+              primary: "#FF577A",
+              primaryDark: "#FF577A",
+              second: "#FE8D7B",
+              secondDark: "#FE8D7B",
+              titleFrom: "#FDA0B1",
+              titleTo: "#FB5875",
             },
 
             backgroundImage: {
-              'footer-banner': "url('/assets/images/footer-banner.jpg')",
+              "footer-banner": "url('/assets/images/footer-banner.jpg')",
               roadmap: "url('/assets/images/ochopper/bkg-roadmap.png')",
             },
             fontFamily: {
-              gothamBlack: ['GothamBlack', 'sans-serif'],
-              notoSans: ['Noto Sans', 'sans-serif'],
+              gothamBlack: ["GothamBlack", "sans-serif"],
+              notoSans: ["Noto Sans", "sans-serif"],
             },
           },
         },
@@ -165,7 +165,7 @@
                 </button>
 
                 <div
-                  class="absolute hidden top-[112px] -right-[100vw] z-20 w-full px-5 py-3 duration-300 bg-white shadow lg:w-auto collapse navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none"
+                  class="transition-all absolute hidden top-[76px] -right-[100vw] z-20 w-full px-5 py-3 duration-300 text-black md:text-white bg-[#fdd7dd] md:bg-white shadow lg:w-auto collapse navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none"
                   id="navbarOne"
                 >
                   <ul
@@ -209,7 +209,7 @@
           id="home"
         >
           <div
-            class="flex flex-1 flex-col pt-40 animate__animated animate__fadeInUp"
+            class="flex flex-1 flex-col pt-4 md:pt-40 animate__animated animate__fadeInUp"
           >
             <div class="font-bold text-7xl mb-8">
               <span
@@ -392,7 +392,7 @@
           <div
             class="flex gap-48 md:gap-16 flex-col justify-center md:flex-row items-center animate__animated animate__fadeOut featured-wrapper"
           >
-            <div class="feature-card bg-secondDark">
+            <div class="feature-card m-auto bg-secondDark">
               <img
                 class="img-feature"
                 src="/assets/images/ochopper/chopper_6.png"
@@ -425,7 +425,7 @@
                 </button>
               </div>
             </div>
-            <div class="feature-card bg-primaryDark">
+            <div class="feature-card m-auto bg-primaryDark">
               <img
                 class="img-feature"
                 src="/assets/images/ochopper/chopper_1.png"
@@ -458,7 +458,7 @@
                 </button>
               </div>
             </div>
-            <div class="feature-card bg-secondDark">
+            <div class="feature-card m-auto bg-secondDark">
               <img
                 class="img-feature"
                 src="/assets/images/ochopper/chopper_12.png"
@@ -725,12 +725,12 @@
           </div>
 
           <script>
-            var xValues = ['Presale', 'Liquidity', 'Unicrypt Fee', 'Burnt'];
+            var xValues = ["Presale", "Liquidity", "Unicrypt Fee", "Burnt"];
             var yValues = [65.7, 32.77, 1.44, 0.09];
-            var barColors = ['#143F6B', '#F55353', '#FEB139', '#F6F54D'];
+            var barColors = ["#143F6B", "#F55353", "#FEB139", "#F6F54D"];
 
-            new Chart('myChart', {
-              type: 'doughnut',
+            new Chart("myChart", {
+              type: "doughnut",
               data: {
                 labels: xValues,
                 datasets: [
@@ -1566,10 +1566,10 @@
     <script src="assets/js/babysanji.js"></script>
     <script>
       function toggleMenu() {
-        const menu = document.getElementById('navbarOne');
-        menu.classList.toggle('hidden');
-        menu.classList.toggle('-right-[100vw]');
-        menu.classList.toggle('right-0');
+        const menu = document.getElementById("navbarOne");
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("-right-[100vw]");
+        menu.classList.toggle("right-0");
       }
     </script>
   </body>
